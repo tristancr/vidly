@@ -8,9 +8,10 @@ pipeline {
                 }
             }
             steps {
-                echo 'build app...'
-                sh 'cd ./frontend'
-                sh 'npm install'
+                dir('./frontend') {
+                    echo 'build app...'
+                    sh 'npm install'
+                }
             }
         }
     }
