@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             agent {
                 docker {
-                    image 'stuffy3834/nodjs-v1'
+                    image 'stuffy3834/nodejs'
                 }
             }
             steps {
